@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input Tag</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form method="post" action="result.html" style="text-align: center;">
+            <div style="display: inline-block; width: 600px;">
+                <h1 style="background-color: rgb(0, 166, 255); color: white; padding: 10px;">Input Tag</h1>
+                <div>
+                    <label for="id">
+                        <h2 style="display: inline-block; text-align: right; width: 120px; color: gray;">아이디 : </h2>
+                    </label>
+                    <input type="text" id="id" name="id" style="width: 280px; height: 50px; border: 1px solid lightgray; padding-left: 15px;"
+                            required placeholder="아이디를 입력하세요!">
+                </div>
+                <div>
+                    <h2 style="display: inline-block; text-align: right; width: 120px; color: gray;">비밀번호 : </h2>
+                    <input type="password" name="pw" style="width: 280px; height: 50px; border: 1px solid lightgray; padding-left: 15px;"
+                            required placeholder="비밀번호를 입력하세요!">
+                </div>
+                <div>
+                    <h2 style="display: inline-block; text-align: right; width: 120px; color: gray;">이메일 : </h2>
+                    <input type="text" name="mail" style="width: 280px; height: 50px; border: 1px solid lightgray; padding-left: 15px;">
+                </div>
+                <div>
+                    <h2 style="display: inline-block; text-align: right; width: 120px; color: gray;">전화번호 : </h2>
+                    <input type="text" name="tel" style="width: 280px; height: 50px; border: 1px solid lightgray; padding-left: 15px;">
+                </div>
+                <div>
+                    <h2 style="display: inline-block; text-align: right; width: 120px; color: gray;">성별 : </h2>
+                    <div style="display: inline-block; width: 140px; height: 35px; text-align: center;">
+                        <input type="radio" name="gen" id="F" value="여자" >
+                        <label for="F">
+                            <h2 style="display: inline-block; width: 60px; color: gray;">여자</h2>
+                        </label>
+                    </div>
+                    <div style="display: inline-block; width: 140px; height: 35px; text-align: center;">
+                        <input type="radio" name="gen" id="M" value="남자" >
+                        <label for="M">
+                            <h2 style="display: inline-block; width: 60px; color: gray;">남자</h2>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <h2 style="display: inline-block; text-align: right; width: 120px; color: gray; text-align: right;">선호과목 : </h2>
+                    <ul  style="list-style-type: none; display: inline-block; width: 280px; text-align: left;">
+                        <label for="java">
+                            <li><input type="checkbox" name="fab" value="java" id="java"> 자바</li>
+                        </label>
+                        <label for="db">
+                            <li><input type="checkbox" name="fab" value="db" id="db"> 오라클</li>
+                        </label>
+                        <label for="html">
+                            <li><input type="checkbox" name="fab" value="html" id="html"> HTML</li>
+                        </label>
+                        <label for="python">
+                            <li><input type="checkbox" name="fab" value="python" id="python"> Python</li>
+                        </label>
+                        <label for="r">
+                            <li><input type="checkbox" name="fab" value="r" id="r"> R</li>
+                        </label>
+                    </ul>
+                </div>
+                <div>
+                    <h2 style="display: inline-block; text-align: right; width: 120px; color: gray;">현재 과목 : </h2>
+                    <select name="sub" style="width: 280px; height: 35px; border: 1px solid lightgray; padding-left: 15px;">
+                        <option value="java">자바</option>
+                        <option value="db">오라클</option>
+                        <option selected>### 현재 과목 ###</option>
+                        <option value="html">웹</option>
+                        <option value="spring">스프링</option>
+                        <option value="Python">파이썬</option>
+                        <option value="r">R</option>
+                    </select>
+                </div>
+                <div style="text-align: left;">
+                    <h2 style="float: left; position: relative; left: 95px; text-align: right; width: 120px; color: gray;">기타 : </h2>
+                    <textarea name="etc" cols="50" rows="10"
+                                style="position: relative; left: 100px; top: 25px; display: inline-block; clear: left; border: 1px solid lightgray; resize: none;" ></textarea>
+                </div>
+                <div style="margin-top: 35px;">
+                    <input type="reset" value="RESET" 
+                    style="width: 50%; height: 35px; float: left; background-color: orange; border: none; cursor: pointer;">
+                    <input type="submit" value="submit" 
+                    style="width: 50%; height: 35px; float: left; background-color: rgb(0, 166, 255); border: none; cursor: pointer;">
+                </div>
+            </div>
+        </form>
+    </body>
+    </html>
