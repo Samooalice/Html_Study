@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>입력 태그 속성</title>
+        <meta charset="UTF-8">
+        <style>
+            .fr{
+                width: 600px;
+                margin: 0px auto;
+                text-align: center;
+            }
+            .fr > div{
+                text-align: left;
+            }
+            [type="submit"]{
+                border: none;
+                height: 30px;
+                width: 100px;
+                background-color: gray;
+                cursor: pointer;
+            }
+            input[type="text"]:enabled{
+                margin-top: 10px;
+            }
+            input[type="text"], [type="password"]{
+                margin-top: 10px;
+            }
+            input:checked{
+                width: 30px;
+                height: 30px;
+            }
+            button{
+                margin-top: 30px;
+            }
+            .d1{
+                display: inline-block;
+                width: 200px;
+                height: 20px;
+                text-align: center;
+            }
+            .d2{
+                display: inline-block;
+                margin-top: 10px;
+                width: 90px;
+                height: 90px;
+            }
+            .d3{
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                border: 1px solid orange;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+            .d3:hover{
+                background-color: yellow;
+            }
+            .d3:active{
+                background-color: gray;
+            }
+
+            label.ttl{
+                display: inline-block;
+                width: 200px;
+                text-align: right;
+                padding-right: 10px;
+            }
+            .dfr{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="get" action="result.html" class="fr">
+            <div>
+                <label for="id" class="ttl">I D : </label>
+                <input type="text" name="id" id="id" value="jennie" readonly>
+            </div>
+            <div>
+                <label for="pw" class="ttl">P W : </label>
+                <input type="password" name="pw" id="pw" value="12345" disabled>
+            </div>
+            <div>
+                <label for="mail" class="ttl">MAIL : </label>
+                <input type="text" name="mail" id="mail">
+            </div>
+            <div>
+                <label for="" class="ttl">GENDER : </label>
+                <div class="d1">
+                    <div class="d2">
+                        <input type="radio" name="gen" value="F" id="F">
+                        <label for="F">여자</label>
+                    </div>
+                    <div class="d2">
+                        <input type="radio" name="gen" value="M" id="M">
+                        <label for="M">남자</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="dfr">
+            <div class="d3"><p></p></div>
+            <div>
+                <button type="submit">submit</button>
+            </div>
+        </div>
+    </body>
+</html>

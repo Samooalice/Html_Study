@@ -1,0 +1,26 @@
+/* 태그이름 */
+h3{
+    color: orange;
+    background-color: yellow;
+    text-align: center; 
+ }
+ 
+ /* id 이름 */
+ #h302{
+     color: lightcoral;
+ }
+
+ /* 클래스 상속 */
+ .h3-3{
+     border: 3px dotted purple;
+ }
+
+ /* 클래스 상속 받은 태그 중 특정 태그에만 추가 설정 */
+ pre.h3-3{
+    background-color: pink;
+ }
+
+ /* pre태그 하위의 클래스이름이 h3-3인 태그 모두 선택 */
+ pre .h3-3{
+    background-color: pink;
+ }
